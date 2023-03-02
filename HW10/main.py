@@ -2,7 +2,6 @@ import time
 import threading
 import multiprocessing
 
-
 with open("text.txt", "r") as f:
     text = f.read()
 
