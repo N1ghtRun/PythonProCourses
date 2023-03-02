@@ -7,7 +7,7 @@ with open("text.txt", "r") as f:
     text = f.read()
 
 
-def writing_file(num=1):
+def writing_file(num):
     start_time = time.time()
     with open("1.txt", "w") as f:
         f.write(text)
@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     # 1 thread 1 process
     print("\n" + "\033[1m" + "1 thread 1 process" + "\033[0m")
-    writing_file()
+    writing_file(1)
 
     # 4 threads
     print("\n" + "\033[1m" + "4 threads" + "\033[0m")
