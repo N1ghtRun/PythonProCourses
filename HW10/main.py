@@ -66,7 +66,7 @@ if __name__ == "__main__":
     t3.join()
     t4.join()
 
-    # 4 threads
+    # 4 processes
     print("\n" + "\033[1m" + "4 processes" + "\033[0m")
     p1 = multiprocessing.Process(target=writing_file)
     p2 = multiprocessing.Process(target=writing_file2)
