@@ -43,7 +43,6 @@ def writing_file4():
     print(f"function 4: {result_time}")
 
 
-# several processes
 if __name__ == "__main__":
 
     # 1 thread 1 process
