@@ -39,7 +39,7 @@ if __name__ == "__main__":
     t3.join()
     t4.join()
     print('\nIn this case GIL (Global Interpreter Lock) is used. Python performs one thread at the time, therefore '
-          'parallelism is not achieved, execution takes extra time.')
+          'true parallelism is not achieved, execution takes extra time.')
 
 
     # 4 processes
