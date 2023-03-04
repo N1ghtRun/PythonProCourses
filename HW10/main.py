@@ -38,6 +38,9 @@ if __name__ == "__main__":
     t2.join()
     t3.join()
     t4.join()
+    print('\nIn this case GIL (Global Interpreter Lock) is used. Python performs one thread at the time, therefore '
+          'parallelism is not achieved, execution takes extra time.')
+
 
     # 4 processes
     print("\n" + "\033[1m" + "4 processes" + "\033[0m")
@@ -55,3 +58,7 @@ if __name__ == "__main__":
     p2.join()
     p3.join()
     p4.join()
+    print('\n In this case we use multiple processes instead of using several threads within single process. '
+          'Each process has it\'s own memory space and interpreter, each process running on it\'s own core. In this'
+          ' case each thread executed within it\'s own process, therefore there is no need for executing only one'
+          'thread at the time.')
